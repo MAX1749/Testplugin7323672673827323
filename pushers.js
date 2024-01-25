@@ -290,7 +290,7 @@ elements.Cementsss = {
     color: "#b5b5b5",
     behavior: behaviors.LIQUID,
     category:"liquids",
-    tempHigh: 1550,
+    tempHigh: 150,
     stateHigh: "concrete",
     tempLow: -10,
     stateLow: "concrete",
