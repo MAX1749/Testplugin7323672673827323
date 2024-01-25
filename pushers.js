@@ -311,6 +311,6 @@ elements.Heaterconcrete = {
     },
     category:"machines",
     insulate:false,
-    temp:160,
+    temp:180,
     state: "solid"
 }
