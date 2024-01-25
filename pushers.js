@@ -285,3 +285,27 @@ elements.right_e_pusher = {
 	conduct: 1,
 	state: "solid",
 }
+
+
+elements.Cement2 = {
+    color: "#b5b5b5",
+    behavior: behaviors.LIQUID,
+    tick: function(pixel) {
+        if (pixelTicks - pixel.start > 100 && Math.random() < 0.1) {
+            changePixel(pixel,"concrete")
+        }
+    },
+    onMix: function(pixel) {
+        pixel.start = pixelTicks;
+    },
+    category:"liquids",
+    tempHigh: 1550,
+    stateHigh: "magma",
+    tempLow: -10,
+    stateLow: "concrete",
+    state: "solid",
+    density: 1440,
+    hardness: 0.1,
+    viscosity: 1000,
+    darkText: true
+},
