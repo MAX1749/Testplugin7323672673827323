@@ -314,3 +314,17 @@ elements.Heaterconcrete = {
     temp:180,
     state: "solid"
 }
+
+elements.Heatermetall = {
+    color: "#881111",
+    behavior: behaviors.WALL,
+    tick: function(pixel) {
+        if (pixelTicks > 1) {
+            changePixel(pixel,"Heatermetall")
+        }
+    },
+    category:"machines",
+    insulate:false,
+    temp:5000,
+    state: "solid"
+}
