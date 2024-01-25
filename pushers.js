@@ -309,6 +309,6 @@ elements.Heaterconcrete = {
             changePixel(pixel,"heaterconcrete")
         }
     category:"machines",
-    insulate:true
-    temp:160
+    insulate:true,
+    temp:160,
 }
