@@ -306,7 +306,7 @@ elements.Heaterconcrete = {
     behavior: behaviors.WALL,
     tick: function(pixel) {
         if (pixelTicks > 1) {
-            changePixel(pixel,"heaterconcrete")
+            changePixel(pixel,"Heaterconcrete")
         }
     },
     category:"machines",
