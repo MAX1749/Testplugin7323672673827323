@@ -289,17 +289,9 @@ elements.right_e_pusher = {
 elements.Cementsss = {
     color: "#b5b5b5",
     behavior: behaviors.LIQUID,
-    tick: function(pixel) {
-        if (pixelTicks - pixel.start > 100 && Math.random() < 0.1) {
-            changePixel(pixel,"concrete")
-        }
-    },
-    onMix: function(pixel) {
-        pixel.start = pixelTicks;
-    },
     category:"liquids",
     tempHigh: 1550,
-    stateHigh: "magma",
+    stateHigh: "concrete",
     tempLow: -10,
     stateLow: "concrete",
     state: "solid",
