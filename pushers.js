@@ -300,3 +300,14 @@ elements.Cementsss = {
     viscosity: 1000,
     darkText: true
 }
+
+elements.heaterconcrete = {
+    color: "#881111",
+    tick: function(pixel) {
+        if (pixelTicks > 1) {
+            changePixel(pixel,"heaterconcrete")
+        }
+    category:"machines",
+    insulate:true
+    temp:160
+}
