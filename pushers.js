@@ -301,8 +301,9 @@ elements.Cementsss = {
     darkText: true
 }
 
-elements.heaterconcrete = {
+elements.Heaterconcrete = {
     color: "#881111",
+    behavior: behaviors.WALL,
     tick: function(pixel) {
         if (pixelTicks > 1) {
             changePixel(pixel,"heaterconcrete")
