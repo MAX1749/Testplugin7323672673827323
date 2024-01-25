@@ -307,7 +307,8 @@ elements.Heaterconcrete = {
     tick: function(pixel) {
         if (pixelTicks > 1) {
             changePixel(pixel,"heaterconcrete")
-        },
+        }
+    },
     category:"machines",
     insulate:true,
     temp:160,
