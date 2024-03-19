@@ -328,25 +328,3 @@ elements.Heatermetall = {
     temp:5000,
     state: "solid"
 }
-elements.Foam2 {
-    color: "#cad2e3",
-    behavior: [
-                "XX|XX|XX",
-                "XX|DL%5|XX",
-                "M2%25|M1%25|M2%25",
-            ],
-    tick: function(pixel) {
-        if (pixel.foam && isEmpty(pixel.x,pixel.y-1)) {
-            createPixel("foam",pixel.x,pixel.y-1);
-            pixel.foam--;
-            pixelMap[pixel.x][pixel.y-1].foam = pixel.foam;
-            pixelMap[pixel.x][pixel.y-1].temp = pixel.temp;
-        }
-    },
-    category: "liquids",
-    state: "gas",
-    tempLow: -78.5,
-    stateLow: null,
-    density: 40,
-    stain: -0.1,
-    extinguish: true
